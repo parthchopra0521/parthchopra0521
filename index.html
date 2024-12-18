@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <nav>
+    <div class="left">
+      <a href="/">Parth Chopra</a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com/parthchopra0521" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/in/parth-chopra-27305226a/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:parthchopra.one@gmaily.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Parth 👋</h2>
+        <p>Organized and dependable candidate successful at managing multiple priorities with a positive attitude. Willingness to take on added responsibilities to meet goals.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>Education</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/hero-headshot.webp.jpg" alt="john doe headshot">
+      </div>
+    </section>
+
+  
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        I specialize in creating dynamic and responsive front-end websites using HTML, CSS, and JavaScript, complemented by back-end support with Node.js. With expertise in React, I build interactive user interfaces that enhance user experience.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="node logo">
+          <span>Node.js</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/react-logo.webp" alt="react logo">
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+>
+    <section id="testimony" class="testimony-section">
+      <h2 class="Edu">Education</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/testimony-headshot.webp">
+          <p>EEE Freshman @</p>
+          <p>Manipal Institue of Technology</p>
+        </div>
+
+        <section id="education">
+          <div class="container">
+            <div class="education-item">
+              <h3>CBSE High School Deploma</h3>
+              <p><strong>The Maurya School (2022-2023)</strong></p>
+        
+            </div>
+            <div class="education-item">
+              <h3>B.Tech Electrical and Electronics Engineering </h3>
+              <p><strong>Manipal Institute of Technology (2024-2028) </strong></p>
+            </div>
+            <div class="certificates">
+              <h3>Coursera Certificates</h3>
+              <p><strong>Click the certificate names to view them:</strong></p>
+              <ul>
+                <li><a href="https://www.coursera.org/account/accomplishments/certificate/8W29VH9ZJCN2" target="_blank">Advanced React</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/certificate/NY8Q4DWCAYLG" target="_blank">Principles of UX/UI Design</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/certificate/YW4C3JMFRGVW" target="_blank">HTML and CSS in depth
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          Have a project in mind or want to connect? Feel free to reach out! I’d love to hear from you and discuss how we can work together.
+        </div>
+
+        <form>
+          <label for="name" >Name</label>
+          <input type="text" id="name" required>
+          <label for="cat">Range</label>
+          <input type="range" min="2" max="10" value="4" oninput="this.nextElementSibling.value= this.value">
+          <output>4</output>
+
+          <label >location</label>
+          <input id="blocation" name="blocation" list="location">
+          <datalist id="location">
+            <option value="SF"></option>
+            <option value="San Jose"></option>
+          </datalist>
+
+          <label for="email">Email</label>
+          <input type="date" id="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
